@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #b0e0e6;
+}
+
+h1 {
+  text-align: center;
+}
+
+h1,
+h2 {
+  color: #505151;
+  text-transform: uppercase;
+}
+
+img {
+  display: none;
+}
+
+section {
+  background-color: #f0f8f8;
+}
+
+a {
+  text-align: center;
+  background-color: #505151;
+  color: #b0e0e6;
+}
