@@ -160,3 +160,62 @@ a {
 ```html
 <button>Submit</button>
 ```
+
+## Selectors
+
+- help in styling speicific object or element
+
+- id - selects a single element (`#id`)
+
+- class - selects a group of elements (`.class`)
+
+- tag - selects a specific element (<`tag`>)
+- descendant - selects all the descendant elements (`nav a`) - all of anchor links inside nav tag
+- sibling - selects all the sibling elements
+- child - selects all direct descendant - (`nav > a`) - all of the anchor links whose first or immediate parent is nav.
+- adjacent - selects all the adjacent elements (`h1 + ol`) where h1 and ol are adjacent element
+- attribute - select the element that have the given attribute - `a[href="info.html"]`
+
+```css
+/* Operators can be used to find attributes values you are looking for */
+
+a[href^="https://umich"]
+{
+  /* ^: match the beginning  exactly */
+}
+
+img[src$=".png"] {
+  /* $: match the end exactly */
+}
+
+a[href*="umich"] {
+  /* *: wildcard */
+}
+```
+
+- combinator - selects all the sibling elements
+- universal - selects all the elements (`*`)
+
+```css
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+```
+
+- pseudo-class - selects all the elements
+- pseudo-element - selects all the elements
+- :not - selects all the elements
+- :first-child - selects the first child element
+- :last-child - selects the last child element
+- :only-child - selects the only child element
+- :empty - selects the element if it has no child element
+- :root - selects the root element
+- :nth-child - selects the nth child element
+- :nth-last-child - selects the nth last child element
+
+## Classes vs ids
+
+- id - unique - can be used only once.
+- classes can be used multiple times.
