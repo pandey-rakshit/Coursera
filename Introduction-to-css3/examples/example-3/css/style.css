@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  margin: 4%;
+}
+
+header {
+  background-color: #9b5a9f;
+  padding: 15px;
+}
+
+h1 {
+  text-align: center;
+}
+
+div {
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  padding: 15px;
+  font-size: larger;
+  color: #f9f039;
+}
+
+a:visited {
+  color: #0fcf00;
+}
+
+a:focus,
+a:hover {
+  color: #011b3f;
+}
+
+a:active {
+  color: #f0f4f9;
+}

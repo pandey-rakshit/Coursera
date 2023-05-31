@@ -115,3 +115,48 @@ TotalHeight = 5 + 1 + 10 + 50 + 10 + 1 + 5 => 82
   - %, vh, vw
   - em (for font): 1 em is current size, .75 is 75% of the current size.
   - rem (for font): 1 rem is current size of root element.
+
+## links
+
+```css
+/* example dummy A (link) */
+
+a {
+  display: block;
+  font-weight: bold;
+  color: #fff;
+  background-color: #0006cc;
+  width: 200px;
+  text-align: center;
+  padding: 4px;
+  text-decoration: none;
+}
+```
+
+- links help the browser to understand and map the pages around the internet.
+
+- Be semantic, ex - if you want a button use the `<button>` element instead.
+
+### states
+
+- a:link - a normal, unvisited link
+
+- a:visited - has been visited
+
+- a:hover - activated by mouse
+
+- a:focus - activated with the keyboard
+
+- a:active - is being clicked
+
+### Precedence of Rule
+
+- a:hover Must come after a:link and a:visited
+
+- a:active Must come after a:hover
+
+## Buttons
+
+```html
+<button>Submit</button>
+```
