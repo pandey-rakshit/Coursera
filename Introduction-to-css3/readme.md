@@ -350,14 +350,9 @@ div:active {
 - matrix
 
 ```css
-/* 
+/* transform: matrix(a, b, c, d, e, f) 
 
-transform: matrix(a, b, c, d, e, f)
-
-where
-
-a = 
-
+matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY())
 
 */
 
