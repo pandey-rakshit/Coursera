@@ -322,7 +322,7 @@ div:active {
 
 2D Transition options
 
-- trnaslate
+- translate
 
 ```css
 /* transform: translate(x, y) */
