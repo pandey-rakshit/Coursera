@@ -219,3 +219,155 @@ a[href*="umich"] {
 
 - id - unique - can be used only once.
 - classes can be used multiple times.
+
+## Transitions
+
+- Animation
+
+- When element transition from one state to another, you can alter their appearance
+
+  - if you hover over the link, change the color.
+  - if an image comes into focus, change the size
+
+  ```css
+  Element {
+    /* 
+  
+  transition-property: 
+  what is it you want to change ? (size, color, position, etc...)
+  
+   transition-duration: 
+   how long the transition will last ? (in milliseconds)
+  
+  transition-timing:
+  how the transition will be paced ? (ease, linear, etc...)
+  
+  transition-delay:
+  when the transition will start ? (in milliseconds)  
+  
+  */
+  }
+  ```
+
+- Define the element
+- choose the element for transition
+- Define the new values
+  - you must combine this step with a pseudo-class
+
+```css
+div {
+  color: #000000;
+  background: #2db34a;
+  line-height: 200px;
+  text-align: center;
+  width: 250px;
+  height: 200px;
+  border-radius: 6px;
+  transition-property: background, border-radius, color, width;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+  transition-delay: 0.5s;
+}
+
+div:hover {
+  background: #011b3f;
+  width: 350px;
+  border-radius: 30%;
+}
+
+div:active {
+  color: #000000;
+  width: 150px;
+  background: #2db34a;
+}
+```
+
+## Transform
+
+2D Transition options
+
+- trnaslate
+
+```css
+/* transform: translate(x, y) */
+.box {
+  transform: translate(100px, 100px);
+}
+
+/* 
+  - move x pixels to the left/right and y pixel up/down
+*/
+```
+
+- rotate
+
+```css
+/* tranform: rotate(angle(degree)) */
+
+.box {
+  transform: rotate(45deg);
+}
+
+/* 
+
+- Rotate/spin the element a certain number of degree
+
+*/
+```
+
+- scale
+
+```css
+/* transform: scale(x, y) */
+
+.box {
+  transform: scale(1.5, 1.5);
+}
+
+/* 
+
+- change the width and height of the element
+
+*/
+```
+
+- skew
+
+```css
+/* transfrom: skew(x-angle, y-angle) */
+
+.box {
+  transform: skew(30deg, 45deg);
+}
+
+/* 
+
+- Rotate the element a certain number of degree along the x and y axis
+
+*/
+```
+
+- matrix
+
+```css
+/* 
+
+transform: matrix(a, b, c, d, e, f)
+
+where
+
+a = 
+
+
+*/
+
+.box {
+  transform: matrix(1.5, 0, 0, 1.5, 0, 0);
+}
+
+/* 
+
+- combines all the 2D transform methods into one
+
+*/
+```
