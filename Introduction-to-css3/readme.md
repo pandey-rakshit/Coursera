@@ -409,54 +409,54 @@ matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY())
 
   - Static - default value
 
-```css
-/* 
+  ```css
+  /* 
+  
+  - Place in the next available position
+  - not affected by the top, bottom, left, and right properties
+  
+  */
+  ```
 
-- Place in the next available position
-- not affected by the top, bottom, left, and right properties
+  - Relative
 
-*/
-```
+  ```css
+  /* 
+  
+  - Positioned "relative to itself"
+  - Takes the static position, but add offset
+  - The new positioning does not affect any other element. It is possible to move an element and leave a big hole where it would have been.
+  - Relative positioned elements are often used as container blocks for other elements
+  - Relative positioned elements are usually used to align images
+  
+  */
+  ```
 
-- Relative
+  - Absolute
 
-```css
-/* 
+  ```css
+  /* 
+  
+  - Element is removed from the document flow and positioned relative to its nearest ancestor(or the root)
+  - Other elements behave as if element doesnot exist
+  - can end up on top of another element
+  
+  */
+  ```
 
-- Positioned "relative to itself"
-- Takes the static position, but add offset
-- The new positioning does not affect any other element. It is possible to move an element and leave a big hole where it would have been.
-- Relative positioned elements are often used as container blocks for other elements
-- Relative positioned elements are usually used to align images
+  - Fixed
 
-*/
-```
-
-- Absolute
-
-```css
-/* 
-
-- Element is removed from the document flow and positioned relative to its nearest ancestor(or the root)
-- Other elements behave as if element doesnot exist
-- can end up on top of another element
-
-*/
-```
-
-- Fixed
-
-```css
-/* 
-
-- Positioned relative to the browser window
-- will not move, even if the window is scrolled 
-    - IE7 and IE8 support the fixed value only if a !DOCTYPE is specified
-- Think of popup boxes that won't go away !!
-- Or a navigation bar that is always visible on the top
-
-*/
-```
+  ```css
+  /* 
+  
+  - Positioned relative to the browser window
+  - will not move, even if the window is scrolled 
+      - IE7 and IE8 support the fixed value only if a !DOCTYPE is specified
+  - Think of popup boxes that won't go away !!
+  - Or a navigation bar that is always visible on the top
+  
+  */
+  ```
 
 - Position are modified by the properties: top, right, bottom, left
 
